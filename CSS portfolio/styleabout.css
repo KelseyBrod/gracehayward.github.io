@@ -1,0 +1,18 @@
+h1 {
+    font-family: 'Arial Narrow Bold';
+    color: white;
+    background-color: rgb(254, 149, 233);
+    text-align: center;
+}
+main {
+    margin: auto;
+    display: center;
+    width: 960px;
+    height: 500px;
+    text-align: center;
+}
+section {
+    border: 1px solid white;
+    height: 1200px;
+    overflow: auto;
+}
