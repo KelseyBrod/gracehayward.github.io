@@ -1,0 +1,35 @@
+h1 {
+    color: white;
+    background: rgb(233, 82, 180);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ul {
+    color: white;
+    text-align: left;
+}
+.column {
+    flex: 33.33%;
+    height: 500px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 0, 200);
+    text-align: center;
+  }
+  .container {
+     display: flex;
+  }	
+  body {
+    background-color: rgb(147, 40, 118);
+  }
+a {
+    color: white;
+}
+p {
+    color: white;
+    text-align: center;
+}
