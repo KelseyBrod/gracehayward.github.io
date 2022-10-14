@@ -1,0 +1,45 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+h3 {
+    background-color: white;
+    text-align: center;
+}
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "header header"
+    "sidebar content"
+    "footer footer"
+    ;
+  }
+  .title {
+    grid-area: title;
+    background-color: red;
+    color: white;
+  }
+  .header {
+    grid-area: header;
+    text-align: right;
+    background-color: orange;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    text-align: center;
+    background-color: yellow;
+  }
+  .content {
+    grid-area: content;
+    background-color: green;
+    color: white;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: blue;
+  }
+  
