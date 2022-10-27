@@ -1,0 +1,31 @@
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 60px;
+}
+
+.DurhamEateries{
+    width:200px;
+    height:200px;
+    background-size:cover;
+    display:inline-block;
+    border-radius:16px;
+    margin:4px;
+    box-shadow:0 0 16px rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+  } 
+  a {
+    color: white;
+  }
+
