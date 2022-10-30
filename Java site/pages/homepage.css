@@ -26,4 +26,16 @@ h2 {
   a {
     color: white;
   }
-
+  body {
+    background-color: tan;
+  }
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: gray;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    body {
+      background-color:white;
+    }
+  }
