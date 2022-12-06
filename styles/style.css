@@ -6,7 +6,7 @@ personalize this portfolio page using google fonts, different colors, different 
     margin: 0 auto;
 }
 body{
-    background-color: white;
+    background: linear-gradient(to right, #f4f4f4, #e8b6bb, #dd90c2, #ca69d3, #b446e3, #a026f3, #8b06ff);
 }
 
 header, footer {
@@ -16,6 +16,14 @@ header, footer {
     align-items: center;
     border: 1px solid black;
     /* background-color: rgb(82, 99, 69);  play with a color scheme! */
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 main {
@@ -32,7 +40,7 @@ nav {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 50px;
 }
 
 #home {
