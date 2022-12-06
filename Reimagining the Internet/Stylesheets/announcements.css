@@ -26,3 +26,7 @@
     list-style: none;
     transition: all 0.5s ease;
   }
+
+  div {
+    border: 1px solid black;
+  }
