@@ -26,3 +26,52 @@
     list-style: none;
     transition: all 0.5s ease;
   }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background: #ece9e6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ffffff,
+      #ece9e6
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ffffff,
+      #ece9e6
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  #main {
+    margin-top: 1em;
+    background: #003087; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #003087,
+      #2193b0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #003087,
+      #2193b0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    background-color: lightgrey;
+  }
+  
+  /*Buttons*/
+  #goBack {
+    display: none;
+  }
+  
+  #hideSchedule {
+    display: none;
+  }
+  
+  /*Schedule*/
+  #schedule {
+    display: none;
+  }
+  

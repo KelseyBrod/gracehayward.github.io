@@ -26,3 +26,15 @@
     list-style: none;
     transition: all 0.5s ease;
   }
+
+  *{
+  margin:0;
+  padding:0;
+}
+
+#container{
+  width:1000;
+  overflow:hidden;
+  margin:50px auto;
+  background:white;
+}

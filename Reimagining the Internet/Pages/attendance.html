@@ -20,5 +20,139 @@
                       <img src="../Images/dukeeee - Edited.png" class="img-fluid" width = 130px height = 60px>
                 </div>
           </a>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <center><div class="container mt-5">
+            <div class="row text-center">
+              <div class="col">
+                <h2>ATTENDANCE MANAGER</h2><br>
+                <i><p>Enter your NAME and EMPLOYEE ID. Press submit to see your updated attendance count.</p></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container">
+            <div id="main" class="container">
+              <div class="row text-center">
+                <div class="col">
+                  <div id="inner">
+                    <label class="mt-5">Name</label>
+                    <input id="employeeName" class="form-control">
+                    <label class="mt-3">Employee Id</label>
+                    <input id="employeeId" class="form-control" type="number">
+                    <button id="submit" class="btn btn-secondary mt-3">Submit</button>
+              </div>
+            </div>
+          </div>
+          
+          <div id="schedule" class="container mt-5">
+            <table id="newTable" class="table table-bordered table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Employee ID</th>
+                  <th scope="col">Employee Name</th>
+                  <th scope="col">Employee Duties</th>
+                  <th scope="col">Checked-In</th>
+                </tr>
+              </thead>
+              <tbody id="newRow">
+              </tbody>
+            </table>
+          </div></center>
+          <script>
+            let display = document.getElementById("showClockIn");
+let loading = document.getElementById("loadingWheel");
+let inner = document.getElementById("inner");
+let goBack = document.getElementById("goBack");
+let mainApp = document.getElementById("main");
+let schedule = document.getElementById("schedule");
+let showScheduleButton = document.getElementById("showSchedule");
+let hideScheduleButton = document.getElementById("hideSchedule");
+
+//Object template
+function User(newUser, newId, newRole, logInTime) {
+  this.newUser = newUser;
+  this.newId = newId;
+  this.newRole = newRole;
+  this.logInTime = logInTime;
+}
+
+//User clicks submit
+document.getElementById("submit").addEventListener("click", signOn);
+function signOn() {
+  //Variables
+  let date = new Date();
+  let dateString = date.toDateString();
+  let time = date.toLocaleTimeString();
+  let newName = document.getElementById("employeeName");
+  let newId = document.getElementById("employeeId");
+  let roles = [
+    "Cashier",
+    "Grill",
+    "Janitor",
+    "Supervisor",
+    "Truck unloader/Stock Clerk",
+    "Customer Service",
+    "Bakery",
+    "Produce",
+    "Meats",
+    "Frozen Foods",
+    "Manager"
+  ];
+  let rolePicker = Math.floor(Math.random() * roles.length);
+  let pickedRole = roles[rolePicker];
+
+  //Validate fields
+  if (newName.value === "" || newId.value === "") {
+    display.innerText = `Please fill out both fields.`;
+    return;
+  }
+  //Create instance of User object
+  let addEmployee = new User(newName.value, newId.value, pickedRole, time);
+
+  display.innerHTML = `${newName.value} checked-in at ${time} on ${dateString}`;
+
+  //Create rows in table
+  let createRow = document.getElementById("newRow");
+  let row = createRow.insertRow(-1);
+  let cell1 = row.insertCell(0);
+  let cell2 = row.insertCell(0);
+  let cell3 = row.insertCell(0);
+  let cell4 = row.insertCell(0);
+  cell1.innerHTML = `${time}`;
+  cell2.innerHTML = `${pickedRole}`;
+  cell3.innerHTML = `${newName.value}`;
+  cell4.innerHTML = `${newId.value}`;
+
+  //Hide or show elements
+  inner.style.display = "none";
+  newName.value = "";
+  newId.value = "";
+  goBack.style.display = "inline";
+  console.log(addEmployee);
+}
+
+goBack.addEventListener("click", function() {
+  inner.style.display = "inline";
+  goBack.style.display = "none";
+  display.innerHTML = "";
+});
+
+showScheduleButton.addEventListener("click", function() {
+  schedule.style.display = "block";
+  showScheduleButton.style.display = "none";
+  hideScheduleButton.style.display = "inline";
+});
+
+hideScheduleButton.addEventListener("click", function() {
+  schedule.style.display = "none";
+  hideScheduleButton.style.display = "none";
+  showScheduleButton.style.display = "inline";
+});
+          </script>
 </body>
 </html>

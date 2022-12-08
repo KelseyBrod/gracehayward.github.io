@@ -20,5 +20,95 @@
                       <img src="../Images/dukeeee - Edited.png" class="img-fluid" width = 130px height = 60px>
                 </div>
           </a>
+          <br>
+          <br>
+          <br>
+          <br>
+              <title>Attendance Sheet</title>
+              <link rel="stylesheet" type="text/css" href="style.css">
+              <script src="main.js"></script>
+            </head>
+              <h3 style="margin-top: 20px; margin-bottom: 20px;">
+              Phonathon Roster
+                </h3>
+                <div>
+                  <span>1</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br><br>
+                <div>
+                  <span>2</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br> <br>
+                  <div>
+                  <span>3</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br><br>
+                    <div>
+                  <span>4</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br><br>
+                      <div>
+                  <span>5</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br><br>
+                        <div>
+                  <span>6</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br><br>
+                          <div>
+                  <span>7</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br><br>
+                            <div>
+                  <span>8</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br><br>
+                              <div>
+                  <span>9</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br><br>
+                                <div>
+                  <span>10</span>
+                  <input type="text" placeholder="Name of the student" id="name_of_the_student_1">
+                  <br><br>
+              <script>
+                name_of_the_student_array = [];
+
+function submit()
+	{
+        
+        var name_1 = document.getElementById("name_of_the_student_1").value;
+        var name_2 = document.getElementById("name_of_the_student_2").value;
+        var name_3 = document.getElementById("name_of_the_student_3").value;
+        var name_4 = document.getElementById("name_of_the_student_4").value;
+        var name_5 = document.getElementById("name_of_the_student_5").value;
+        var name_6 = document.getElementById("name_of_the_student_6").value;
+        var name_7 = document.getElementById("name_of_the_student_7").value;
+        var name_8 = document.getElementById("name_of_the_student_8").value;
+        var name_9 = document.getElementById("name_of_the_student_9").value;
+        var name_10 = document.getElementById("name_of_the_student_10").value;
+    
+
+        name_of_the_student_array.push(name_1);
+        name_of_the_student_array.push(name_2);
+        name_of_the_student_array.push(name_3);
+        name_of_the_student_array.push(name_4);
+
+		console.log(name_of_the_student_array);
+		
+        document.getElementById("display_name").innerHTML = name_of_the_student_array;
+        document.getElementById("submit_button").style.display = "none";
+        document.getElementById("sort_button").style.display = "inline-block";
+
+	}
+
+function sorting()
+	name_of_the_student_array.sort();
+    console.log(name_of_the_student_array);
+	document.getElementById("display_name").innerHTML = name_of_the_student_array;
+              </script>
+<br>
+<br>
+<br>
 </body>
 </html>
