@@ -62,10 +62,10 @@
   }
   
   .landing-page .note {	
-    background-color: rgb(236, 248, 236);
+    background-color: #003087;
     border: 1px dashed;	
     border-radius: 4px;	
-    color: rgb(115, 136, 96);
+    color: #003087;
     font-family: georgia;	
     font-size: .9em;
     font-style: italic;
@@ -75,9 +75,9 @@
   
   .form-appointment {
     padding: 2em;
-    background-color: rgb(239, 252, 239);
+    background-color: #002f8771;
     border-radius: 4px;
-    border: 1px solid rgb(130, 228, 130);
+    border: 1px solid #003087;
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
     font-family: 'PT Sans', Arial, sans-serif;
     margin: 20px auto;
@@ -87,7 +87,7 @@
   .form-appointment input[type=email],
   .form-appointment input[type=tel],
   .form-appointment textarea {	
-    border: 1px solid rgb(153, 202, 129);
+    border: 1px solid #003087;
     border-radius: .2em;	
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 1.1em;
@@ -116,7 +116,7 @@
   .form-appointment textarea:active,
   .form-appointment textarea:focus {	
     outline: 0;
-    box-shadow: 0 0 6px rgb(176, 226, 188);
+    box-shadow: 0 0 6px #003087;
   }
   
   .form-appointment textarea {
@@ -124,8 +124,8 @@
   }
   
   .form-appointment input[type=submit] {
-    background-color: rgb(118, 207, 118);
-    border: 1px solid rgb(134, 189, 134);
+    background-color: #003087;
+    border: 1px solid #003087;
     border-radius: 4px;
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -136,11 +136,11 @@
   
   .form-appointment input[type=submit]:hover {
     background-color: white;
-    color: rgb(118, 207, 118);
+    color: #003087;
   }
   
   .form-appointment .wpcf7-list-item-label {
-    color: rgb(130, 178, 136);
+    color: black;
   }
   
   span.wpcf7-list-item {
