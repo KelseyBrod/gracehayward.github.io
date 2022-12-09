@@ -6,7 +6,7 @@ personalize this portfolio page using google fonts, different colors, different 
     margin: 0 auto;
 }
 body{
-    background: linear-gradient(to right, #f4f4f4, #e8b6bb, #dd90c2, #ca69d3, #b446e3, #a026f3, #8b06ff);
+    background: linear-gradient(to right, #b7d6f0, #8bc3e8, #60bddf, #4a9ed2, #2f80db, #1164e9, #2855f6);
 }
 
 header, footer {
@@ -19,15 +19,15 @@ header, footer {
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 main {
-    font-family: 'Times New Roman', Times, serif; /* try using a google font instead*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 1px, solid, black;
 }
 
@@ -59,8 +59,6 @@ nav {
     grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px; 
-    /* background: rgba(102, 119, 59, 0.5);  play with color*/
-    
 }
 
 #page_title{
@@ -80,7 +78,7 @@ nav {
     "image description";
     grid-column-gap: 15px;
     align-items: center;
-    background: rgba(232, 232, 231, 0.5); /*  play with color*/
+    background: rgba(238, 236, 236, 0.339);
 }
 
 .project_image { 
@@ -106,7 +104,7 @@ nav {
     align-items: center;
     padding: 1rem;
     border-top: 1px solid black; /* again, play with this styling*/
-    margin-top: 2rem;
+    margin-top: 1rem;
 
 }
 
@@ -128,4 +126,8 @@ nav {
     #page_title{
         grid-column: 1/2;
     }
+}
+
+footer {
+    font-family: cursive;
 }
